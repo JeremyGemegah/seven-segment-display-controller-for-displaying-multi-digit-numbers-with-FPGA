@@ -1,0 +1,6 @@
+vhdl work "../struct/multiplexer_2to4.vhd"
+vhdl work "decoder_2by4.vhd"
+vhdl work "counter_2bit.vhd"
+vhdl work "counter_16.vhd"
+vhdl work "../mux/seven_segment_display.vhd"
+vhdl work "counter_datapath.vhd"

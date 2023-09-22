@@ -1,0 +1,700 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.36 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.36 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Xilinx/projects/struct/register.vhd" in Library work.
+Architecture behavioral of Entity registern is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/tristate_buffer.vhd" in Library work.
+Architecture behavioral of Entity tristate_buffer is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/multiplexer_2to4.vhd" in Library work.
+Architecture behavioral of Entity multiplexer_2to4 is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/multiplexer_1to2.vhd" in Library work.
+Architecture behavioral of Entity multiplexer_1to2 is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/adder.vhd" in Library work.
+Architecture behavioral of Entity adder is up to date.
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/multiplexer_2to4_new.vhd" in Library work.
+Architecture behavioral of Entity multiplexer_2to4_new is up to date.
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/counter_16.vhd" in Library work.
+Architecture behavioral of Entity counter_16 is up to date.
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/counter_2bit.vhd" in Library work.
+Architecture behavioral of Entity counter_2bit is up to date.
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/decoder_2by4.vhd" in Library work.
+Architecture behavioral of Entity decoder_2by4 is up to date.
+Compiling vhdl file "E:/Xilinx/projects/mux/seven_segment_display.vhd" in Library work.
+Architecture behavioral of Entity seven_segment_display is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/control_unit.vhd" in Library work.
+Architecture behavioral of Entity control_unit is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/data_path.vhd" in Library work.
+Architecture behavioral of Entity data_path is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/even_odd_counter.vhd" in Library work.
+Entity <even_odd_counter> compiled.
+Entity <even_odd_counter> (Architecture <behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/counter_datapath.vhd" in Library work.
+Architecture behavioral of Entity display_datapath is up to date.
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/top.vhd" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <even_odd_counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <display_datapath> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <control_unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <data_path> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <multiplexer_2to4_new> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counter_16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counter_2bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decoder_2by4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <seven_segment_display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <registern> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <tristate_buffer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <multiplexer_2to4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <multiplexer_1to2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <adder> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "E:/Xilinx/projects/seven_segment/top.vhd" line 84: Unconnected output port 'registerw' of component 'even_odd_counter'.
+WARNING:Xst:753 - "E:/Xilinx/projects/seven_segment/top.vhd" line 84: Unconnected output port 'registerz' of component 'even_odd_counter'.
+WARNING:Xst:753 - "E:/Xilinx/projects/seven_segment/top.vhd" line 84: Unconnected output port 'current_state' of component 'even_odd_counter'.
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <even_odd_counter> in library <work> (Architecture <behavioral>).
+Entity <even_odd_counter> analyzed. Unit <even_odd_counter> generated.
+
+Analyzing Entity <control_unit> in library <work> (Architecture <behavioral>).
+Entity <control_unit> analyzed. Unit <control_unit> generated.
+
+Analyzing Entity <data_path> in library <work> (Architecture <behavioral>).
+Entity <data_path> analyzed. Unit <data_path> generated.
+
+Analyzing Entity <registern> in library <work> (Architecture <behavioral>).
+Entity <registern> analyzed. Unit <registern> generated.
+
+Analyzing Entity <tristate_buffer> in library <work> (Architecture <behavioral>).
+Entity <tristate_buffer> analyzed. Unit <tristate_buffer> generated.
+
+Analyzing Entity <multiplexer_2to4> in library <work> (Architecture <behavioral>).
+Entity <multiplexer_2to4> analyzed. Unit <multiplexer_2to4> generated.
+
+Analyzing Entity <multiplexer_1to2> in library <work> (Architecture <behavioral>).
+Entity <multiplexer_1to2> analyzed. Unit <multiplexer_1to2> generated.
+
+Analyzing Entity <adder> in library <work> (Architecture <behavioral>).
+Entity <adder> analyzed. Unit <adder> generated.
+
+Analyzing Entity <display_datapath> in library <work> (Architecture <behavioral>).
+Entity <display_datapath> analyzed. Unit <display_datapath> generated.
+
+Analyzing Entity <multiplexer_2to4_new> in library <work> (Architecture <behavioral>).
+Entity <multiplexer_2to4_new> analyzed. Unit <multiplexer_2to4_new> generated.
+
+Analyzing Entity <counter_16> in library <work> (Architecture <behavioral>).
+Entity <counter_16> analyzed. Unit <counter_16> generated.
+
+Analyzing Entity <counter_2bit> in library <work> (Architecture <behavioral>).
+Entity <counter_2bit> analyzed. Unit <counter_2bit> generated.
+
+Analyzing Entity <decoder_2by4> in library <work> (Architecture <behavioral>).
+Entity <decoder_2by4> analyzed. Unit <decoder_2by4> generated.
+
+Analyzing Entity <seven_segment_display> in library <work> (Architecture <behavioral>).
+Entity <seven_segment_display> analyzed. Unit <seven_segment_display> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <control_unit>.
+    Related source file is "E:/Xilinx/projects/struct/control_unit.vhd".
+    Found finite state machine <FSM_0> for signal <ps>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | clr                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st0                                            |
+    | Power Up State     | st0                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <control_unit> synthesized.
+
+
+Synthesizing Unit <registern>.
+    Related source file is "E:/Xilinx/projects/struct/register.vhd".
+    Found 8-bit register for signal <output>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <registern> synthesized.
+
+
+Synthesizing Unit <tristate_buffer>.
+    Related source file is "E:/Xilinx/projects/struct/tristate_buffer.vhd".
+    Found 8-bit tristate buffer for signal <output>.
+    Summary:
+	inferred   8 Tristate(s).
+Unit <tristate_buffer> synthesized.
+
+
+Synthesizing Unit <multiplexer_2to4>.
+    Related source file is "E:/Xilinx/projects/struct/multiplexer_2to4.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <output>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <multiplexer_2to4> synthesized.
+
+
+Synthesizing Unit <multiplexer_1to2>.
+    Related source file is "E:/Xilinx/projects/struct/multiplexer_1to2.vhd".
+Unit <multiplexer_1to2> synthesized.
+
+
+Synthesizing Unit <adder>.
+    Related source file is "E:/Xilinx/projects/struct/adder.vhd".
+    Found 8-bit addsub for signal <answer>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder> synthesized.
+
+
+Synthesizing Unit <multiplexer_2to4_new>.
+    Related source file is "E:/Xilinx/projects/seven_segment/multiplexer_2to4_new.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <output>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <multiplexer_2to4_new> synthesized.
+
+
+Synthesizing Unit <counter_16>.
+    Related source file is "E:/Xilinx/projects/seven_segment/counter_16.vhd".
+    Found 16-bit up counter for signal <number>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_16> synthesized.
+
+
+Synthesizing Unit <counter_2bit>.
+    Related source file is "E:/Xilinx/projects/seven_segment/counter_2bit.vhd".
+    Found 2-bit up counter for signal <number>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_2bit> synthesized.
+
+
+Synthesizing Unit <decoder_2by4>.
+    Related source file is "E:/Xilinx/projects/seven_segment/decoder_2by4.vhd".
+    Found 4x4-bit ROM for signal <output>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <decoder_2by4> synthesized.
+
+
+Synthesizing Unit <seven_segment_display>.
+    Related source file is "E:/Xilinx/projects/mux/seven_segment_display.vhd".
+    Found 16x8-bit ROM for signal <obus>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <seven_segment_display> synthesized.
+
+
+Synthesizing Unit <display_datapath>.
+    Related source file is "E:/Xilinx/projects/seven_segment/counter_datapath.vhd".
+Unit <display_datapath> synthesized.
+
+
+Synthesizing Unit <data_path>.
+    Related source file is "E:/Xilinx/projects/struct/data_path.vhd".
+Unit <data_path> synthesized.
+
+
+Synthesizing Unit <even_odd_counter>.
+    Related source file is "E:/Xilinx/projects/struct/even_odd_counter.vhd".
+Unit <even_odd_counter> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "E:/Xilinx/projects/seven_segment/top.vhd".
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 4
+ 8-bit register                                        : 4
+# Multiplexers                                         : 3
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 2
+# Tristates                                            : 4
+ 8-bit tristate buffer                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <odd_Numders_Double_Even_Numbers/controlunit/ps/FSM> on signal <ps[1:8]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ st0   | 00000001
+ st1   | 00000010
+ st2   | 00000100
+ st3   | 00001000
+ st4   | 00100000
+ st5   | 01000000
+ st6   | 10000000
+ st7   | 00010000
+-------------------
+WARNING:Xst:1290 - Hierarchical block <register_w> is unconnected in block <datapath>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <register_z_tristate> is unconnected in block <datapath>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <register_w_tristate> is unconnected in block <datapath>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Multiplexers                                         : 3
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit tristate_buffer: 8 internal tristates are replaced by logic (pull-up yes): output<0>, output<1>, output<2>, output<3>, output<4>, output<5>, output<6>, output<7>.
+
+Optimizing unit <top> ...
+
+Optimizing unit <registern> ...
+
+Optimizing unit <tristate_buffer> ...
+
+Optimizing unit <data_path> ...
+WARNING:Xst:2677 - Node <odd_Numders_Double_Even_Numbers/datapath/register_w/output_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <odd_Numders_Double_Even_Numbers/datapath/register_w/output_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <odd_Numders_Double_Even_Numbers/datapath/register_w/output_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <odd_Numders_Double_Even_Numbers/datapath/register_w/output_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <odd_Numders_Double_Even_Numbers/datapath/register_w/output_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <odd_Numders_Double_Even_Numbers/datapath/register_w/output_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <odd_Numders_Double_Even_Numbers/datapath/register_w/output_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <odd_Numders_Double_Even_Numbers/datapath/register_w/output_7> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 3.
+FlipFlop odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 52
+ Flip-Flops                                            : 52
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 156
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 15
+#      LUT2                        : 12
+#      LUT2_D                      : 1
+#      LUT3                        : 26
+#      LUT3_D                      : 4
+#      LUT3_L                      : 1
+#      LUT4                        : 41
+#      MUXCY                       : 22
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 52
+#      FDC                         : 27
+#      FDCE                        : 24
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 9
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       54  out of   1920     2%  
+ Number of Slice Flip Flops:             52  out of   3840     1%  
+ Number of 4 input LUTs:                102  out of   3840     2%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    173    12%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------+---------------------------------------------------------------+-------+
+Clock Signal                                 | Clock buffer(FF name)                                         | Load  |
+---------------------------------------------+---------------------------------------------------------------+-------+
+clk                                          | BUFGP                                                         | 50    |
+seven_segment_display/clock_divider/number_15| NONE(seven_segment_display/multiplexer_select_signal/number_0)| 2     |
+---------------------------------------------+---------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-------+
+Control Signal                                                                                                    | Buffer(FF name)                                                   | Load  |
+------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-------+
+clr                                                                                                               | IBUF                                                              | 28    |
+odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd8(odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd8:Q)| NONE(odd_Numders_Double_Even_Numbers/datapath/register_x/output_0)| 24    |
+------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.795ns (Maximum Frequency: 102.093MHz)
+   Minimum input arrival time before clock: 2.715ns
+   Maximum output required time after clock: 13.828ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.795ns (frequency: 102.093MHz)
+  Total number of paths / destination ports: 2149 / 73
+-------------------------------------------------------------------------
+Delay:               9.795ns (Levels of Logic = 11)
+  Source:            odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd5 (FF)
+  Destination:       odd_Numders_Double_Even_Numbers/datapath/register_z/output_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd5 to odd_Numders_Double_Even_Numbers/datapath/register_z/output_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             24   0.720   1.992  odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd5 (odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd5)
+     LUT2_D:I1->O          9   0.551   1.150  odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_Out101 (odd_Numders_Double_Even_Numbers/control_signals<7>)
+     LUT4:I3->O            1   0.551   0.827  odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_lut<1>_SW0 (N30)
+     LUT4:I3->O            1   0.551   0.000  odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_lut<1> (odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_lut<1>)
+     MUXCY:S->O            1   0.500   0.000  odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<1> (odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<2> (odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<3> (odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<4> (odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<5> (odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<5>)
+     MUXCY:CI->O           0   0.064   0.000  odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<6> (odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_cy<6>)
+     XORCY:CI->O           3   0.904   0.975  odd_Numders_Double_Even_Numbers/datapath/adder_subtractor/Maddsub_answer_xor<7> (odd_Numders_Double_Even_Numbers/datapath/result<7>)
+     LUT3:I2->O            1   0.551   0.000  odd_Numders_Double_Even_Numbers/datapath/multiplexer_for_z/output<7>1 (odd_Numders_Double_Even_Numbers/datapath/z_input<7>)
+     FDCE:D                    0.203          odd_Numders_Double_Even_Numbers/datapath/register_z/output_7
+    ----------------------------------------
+    Total                      9.795ns (4.851ns logic, 4.944ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'seven_segment_display/clock_divider/number_15'
+  Clock period: 3.462ns (frequency: 288.850MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               3.462ns (Levels of Logic = 1)
+  Source:            seven_segment_display/multiplexer_select_signal/number_0 (FF)
+  Destination:       seven_segment_display/multiplexer_select_signal/number_0 (FF)
+  Source Clock:      seven_segment_display/clock_divider/number_15 rising
+  Destination Clock: seven_segment_display/clock_divider/number_15 rising
+
+  Data Path: seven_segment_display/multiplexer_select_signal/number_0 to seven_segment_display/multiplexer_select_signal/number_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.720   1.187  seven_segment_display/multiplexer_select_signal/number_0 (seven_segment_display/multiplexer_select_signal/number_0)
+     INV:I->O              1   0.551   0.801  seven_segment_display/multiplexer_select_signal/Mcount_number_xor<0>11_INV_0 (Result<0>1)
+     FDC:D                     0.203          seven_segment_display/multiplexer_select_signal/number_0
+    ----------------------------------------
+    Total                      3.462ns (1.474ns logic, 1.988ns route)
+                                       (42.6% logic, 57.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.715ns (Levels of Logic = 2)
+  Source:            input<0> (PAD)
+  Destination:       odd_Numders_Double_Even_Numbers/datapath/register_z/output_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: input<0> to odd_Numders_Double_Even_Numbers/datapath/register_z/output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   1.140  input_0_IBUF (input_0_IBUF)
+     LUT3:I0->O            1   0.551   0.000  odd_Numders_Double_Even_Numbers/datapath/multiplexer_for_z/output<0>1 (odd_Numders_Double_Even_Numbers/datapath/z_input<0>)
+     FDCE:D                    0.203          odd_Numders_Double_Even_Numbers/datapath/register_z/output_0
+    ----------------------------------------
+    Total                      2.715ns (1.575ns logic, 1.140ns route)
+                                       (58.0% logic, 42.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 784 / 7
+-------------------------------------------------------------------------
+Offset:              13.828ns (Levels of Logic = 5)
+  Source:            odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd5 (FF)
+  Destination:       a (PAD)
+  Source Clock:      clk rising
+
+  Data Path: odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd5 to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             24   0.720   1.823  odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd5 (odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_FFd5)
+     LUT4:I3->O            8   0.551   1.422  odd_Numders_Double_Even_Numbers/controlunit/ps_FSM_Out71 (odd_Numders_Double_Even_Numbers/state<0>)
+     LUT4:I0->O            1   0.551   0.000  seven_segment_display/multiplexer/Mmux_output_43 (seven_segment_display/multiplexer/Mmux_output_43)
+     MUXF5:I0->O           7   0.360   1.405  seven_segment_display/multiplexer/Mmux_output_2_f5_2 (seven_segment_display/display<3>)
+     LUT4:I0->O            1   0.551   0.801  seven_segment_display/seven_segment_decoder/Mrom_obus21 (e_OBUF)
+     OBUF:I->O                 5.644          e_OBUF (e)
+    ----------------------------------------
+    Total                     13.828ns (8.377ns logic, 5.451ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'seven_segment_display/clock_divider/number_15'
+  Total number of paths / destination ports: 92 / 11
+-------------------------------------------------------------------------
+Offset:              13.105ns (Levels of Logic = 5)
+  Source:            seven_segment_display/multiplexer_select_signal/number_0 (FF)
+  Destination:       a (PAD)
+  Source Clock:      seven_segment_display/clock_divider/number_15 rising
+
+  Data Path: seven_segment_display/multiplexer_select_signal/number_0 to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.720   1.526  seven_segment_display/multiplexer_select_signal/number_0 (seven_segment_display/multiplexer_select_signal/number_0)
+     LUT3:I0->O            1   0.551   0.996  seven_segment_display/multiplexer/Mmux_output_43_SW0 (N38)
+     LUT4:I1->O            1   0.551   0.000  seven_segment_display/multiplexer/Mmux_output_43 (seven_segment_display/multiplexer/Mmux_output_43)
+     MUXF5:I0->O           7   0.360   1.405  seven_segment_display/multiplexer/Mmux_output_2_f5_2 (seven_segment_display/display<3>)
+     LUT4:I0->O            1   0.551   0.801  seven_segment_display/seven_segment_decoder/Mrom_obus21 (e_OBUF)
+     OBUF:I->O                 5.644          e_OBUF (e)
+    ----------------------------------------
+    Total                     13.105ns (8.377ns logic, 4.728ns route)
+                                       (63.9% logic, 36.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.30 secs
+ 
+--> 
+
+Total memory usage is 234532 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

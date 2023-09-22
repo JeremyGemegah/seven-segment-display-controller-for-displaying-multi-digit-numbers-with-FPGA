@@ -1,0 +1,22 @@
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/Xilinx/projects/seven_segment/counter_2bit_isim_beh.exe -prj E:/Xilinx/projects/seven_segment/counter_2bit_beh.prj work.counter_2bit 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/Xilinx/projects/seven_segment/counter_2bit.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 160076 KB
+Fuse CPU Usage: 703 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity counter_2bit
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Built simulation executable E:/Xilinx/projects/seven_segment/counter_2bit_isim_beh.exe
+Fuse Memory Usage: 179824 KB
+Fuse CPU Usage: 1108 ms

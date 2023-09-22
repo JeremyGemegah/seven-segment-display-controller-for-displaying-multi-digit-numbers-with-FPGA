@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Xilinx/projects/seven_segment/multiplexer_2to4.xst" -ofn "E:/Xilinx/projects/seven_segment/multiplexer_2to4.syr" 

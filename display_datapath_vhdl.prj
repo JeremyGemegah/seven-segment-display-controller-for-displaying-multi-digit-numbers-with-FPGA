@@ -1,0 +1,6 @@
+vhdl work "E:\Xilinx\projects\seven_segment\multiplexer_2to4_new.vhd"
+vhdl work "E:\Xilinx\projects\seven_segment\decoder_2by4.vhd"
+vhdl work "E:\Xilinx\projects\seven_segment\counter_2bit.vhd"
+vhdl work "E:\Xilinx\projects\seven_segment\counter_16.vhd"
+vhdl work "E:\Xilinx\projects\mux\seven_segment_display.vhd"
+vhdl work "E:\Xilinx\projects\seven_segment\counter_datapath.vhd"

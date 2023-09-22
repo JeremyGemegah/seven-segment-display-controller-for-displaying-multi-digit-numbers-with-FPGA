@@ -1,0 +1,8 @@
+vhdl work "E:\Xilinx\projects\struct\tristate_buffer.vhd"
+vhdl work "E:\Xilinx\projects\struct\register.vhd"
+vhdl work "E:\Xilinx\projects\struct\multiplexer_2to4.vhd"
+vhdl work "E:\Xilinx\projects\struct\multiplexer_1to2.vhd"
+vhdl work "E:\Xilinx\projects\struct\adder.vhd"
+vhdl work "E:\Xilinx\projects\struct\data_path.vhd"
+vhdl work "E:\Xilinx\projects\struct\control_unit.vhd"
+vhdl work "E:\Xilinx\projects\struct\even_odd_counter.vhd"

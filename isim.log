@@ -1,0 +1,24 @@
+ISim log file
+Running: E:\Xilinx\projects\seven_segment\counter_2bit_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Xilinx/projects/seven_segment/counter_2bit_isim_beh.wdb 
+ISim P.20131013 (signature 0x8ef4fb42)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /counter_2bit/clk 0 -radix bin -value 1 -radix bin -time 500 ns -repeat 1 us
+# isim force add /counter_2bit/clr 1 -radix bin
+# run 1.00us
+# isim force add /counter_2bit/clr 0 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us

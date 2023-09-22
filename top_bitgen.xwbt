@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Xilinx\projects\seven_segment\top.ncd
+OUTFILE=E:\Xilinx\projects\seven_segment\top.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=E:\Xilinx\projects\seven_segment
+LICENSE=WebPack
+USER_INFO=__0_0_0

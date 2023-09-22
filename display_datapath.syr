@@ -1,0 +1,486 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
+ 
+--> Reading design: display_datapath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "display_datapath.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "display_datapath"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : display_datapath
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/multiplexer_2to4_new.vhd" in Library work.
+Entity <multiplexer_2to4_new> compiled.
+Entity <multiplexer_2to4_new> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/counter_16.vhd" in Library work.
+Architecture behavioral of Entity counter_16 is up to date.
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/counter_2bit.vhd" in Library work.
+Architecture behavioral of Entity counter_2bit is up to date.
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/decoder_2by4.vhd" in Library work.
+Architecture behavioral of Entity decoder_2by4 is up to date.
+Compiling vhdl file "E:/Xilinx/projects/mux/seven_segment_display.vhd" in Library work.
+Architecture behavioral of Entity seven_segment_display is up to date.
+Compiling vhdl file "E:/Xilinx/projects/seven_segment/counter_datapath.vhd" in Library work.
+Entity <display_datapath> compiled.
+Entity <display_datapath> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <display_datapath> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <multiplexer_2to4_new> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <counter_16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counter_2bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decoder_2by4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <seven_segment_display> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <display_datapath> in library <work> (Architecture <behavioral>).
+Entity <display_datapath> analyzed. Unit <display_datapath> generated.
+
+Analyzing Entity <multiplexer_2to4_new> in library <work> (Architecture <Behavioral>).
+Entity <multiplexer_2to4_new> analyzed. Unit <multiplexer_2to4_new> generated.
+
+Analyzing Entity <counter_16> in library <work> (Architecture <behavioral>).
+Entity <counter_16> analyzed. Unit <counter_16> generated.
+
+Analyzing Entity <counter_2bit> in library <work> (Architecture <behavioral>).
+Entity <counter_2bit> analyzed. Unit <counter_2bit> generated.
+
+Analyzing Entity <decoder_2by4> in library <work> (Architecture <behavioral>).
+Entity <decoder_2by4> analyzed. Unit <decoder_2by4> generated.
+
+Analyzing Entity <seven_segment_display> in library <work> (Architecture <behavioral>).
+Entity <seven_segment_display> analyzed. Unit <seven_segment_display> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <multiplexer_2to4_new>.
+    Related source file is "E:/Xilinx/projects/seven_segment/multiplexer_2to4_new.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <output>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <multiplexer_2to4_new> synthesized.
+
+
+Synthesizing Unit <counter_16>.
+    Related source file is "E:/Xilinx/projects/seven_segment/counter_16.vhd".
+    Found 16-bit up counter for signal <number>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_16> synthesized.
+
+
+Synthesizing Unit <counter_2bit>.
+    Related source file is "E:/Xilinx/projects/seven_segment/counter_2bit.vhd".
+    Found 2-bit up counter for signal <number>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_2bit> synthesized.
+
+
+Synthesizing Unit <decoder_2by4>.
+    Related source file is "E:/Xilinx/projects/seven_segment/decoder_2by4.vhd".
+    Found 4x4-bit ROM for signal <output>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <decoder_2by4> synthesized.
+
+
+Synthesizing Unit <seven_segment_display>.
+    Related source file is "E:/Xilinx/projects/mux/seven_segment_display.vhd".
+    Found 16x8-bit ROM for signal <obus>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <seven_segment_display> synthesized.
+
+
+Synthesizing Unit <display_datapath>.
+    Related source file is "E:/Xilinx/projects/seven_segment/counter_datapath.vhd".
+Unit <display_datapath> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <display_datapath> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block display_datapath, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : display_datapath.ngr
+Top Level Output File Name         : display_datapath
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 74
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 15
+#      LUT2                        : 5
+#      LUT3                        : 8
+#      LUT4                        : 7
+#      MUXCY                       : 15
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 18
+#      FDC                         : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 17
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       19  out of   1920     0%  
+ Number of Slice Flip Flops:             18  out of   3840     0%  
+ Number of 4 input LUTs:                 37  out of   3840     0%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    173    17%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                   | Load  |
+-----------------------------------+-----------------------------------------+-------+
+clk                                | BUFGP                                   | 16    |
+clock_divider/number_15            | NONE(multiplexer_select_signal/number_0)| 2     |
+-----------------------------------+-----------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+clr                                | IBUF                   | 18    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.850ns (Maximum Frequency: 206.186MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 11.558ns
+   Maximum combinational path delay: 11.129ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.850ns (frequency: 206.186MHz)
+  Total number of paths / destination ports: 136 / 16
+-------------------------------------------------------------------------
+Delay:               4.850ns (Levels of Logic = 16)
+  Source:            clock_divider/number_1 (FF)
+  Destination:       clock_divider/number_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clock_divider/number_1 to clock_divider/number_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.720   1.140  clock_divider/number_1 (clock_divider/number_1)
+     LUT1:I0->O            1   0.551   0.000  clock_divider/Mcount_number_cy<1>_rt (clock_divider/Mcount_number_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  clock_divider/Mcount_number_cy<1> (clock_divider/Mcount_number_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<2> (clock_divider/Mcount_number_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<3> (clock_divider/Mcount_number_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<4> (clock_divider/Mcount_number_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<5> (clock_divider/Mcount_number_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<6> (clock_divider/Mcount_number_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<7> (clock_divider/Mcount_number_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<8> (clock_divider/Mcount_number_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<9> (clock_divider/Mcount_number_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<10> (clock_divider/Mcount_number_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<11> (clock_divider/Mcount_number_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<12> (clock_divider/Mcount_number_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  clock_divider/Mcount_number_cy<13> (clock_divider/Mcount_number_cy<13>)
+     MUXCY:CI->O           0   0.064   0.000  clock_divider/Mcount_number_cy<14> (clock_divider/Mcount_number_cy<14>)
+     XORCY:CI->O           1   0.904   0.000  clock_divider/Mcount_number_xor<15> (Result<15>)
+     FDC:D                     0.203          clock_divider/number_15
+    ----------------------------------------
+    Total                      4.850ns (3.710ns logic, 1.140ns route)
+                                       (76.5% logic, 23.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_divider/number_15'
+  Clock period: 3.462ns (frequency: 288.850MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               3.462ns (Levels of Logic = 1)
+  Source:            multiplexer_select_signal/number_0 (FF)
+  Destination:       multiplexer_select_signal/number_0 (FF)
+  Source Clock:      clock_divider/number_15 rising
+  Destination Clock: clock_divider/number_15 rising
+
+  Data Path: multiplexer_select_signal/number_0 to multiplexer_select_signal/number_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.720   1.187  multiplexer_select_signal/number_0 (multiplexer_select_signal/number_0)
+     INV:I->O              1   0.551   0.801  multiplexer_select_signal/Mcount_number_xor<0>11_INV_0 (Result<0>1)
+     FDC:D                     0.203          multiplexer_select_signal/number_0
+    ----------------------------------------
+    Total                      3.462ns (1.474ns logic, 1.988ns route)
+                                       (42.6% logic, 57.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_divider/number_15'
+  Total number of paths / destination ports: 92 / 11
+-------------------------------------------------------------------------
+Offset:              11.558ns (Levels of Logic = 4)
+  Source:            multiplexer_select_signal/number_0 (FF)
+  Destination:       a (PAD)
+  Source Clock:      clock_divider/number_15 rising
+
+  Data Path: multiplexer_select_signal/number_0 to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.720   1.526  multiplexer_select_signal/number_0 (multiplexer_select_signal/number_0)
+     LUT3:I0->O            1   0.551   0.000  multiplexer/Mmux_output_3 (multiplexer/Mmux_output_3)
+     MUXF5:I1->O           7   0.360   1.405  multiplexer/Mmux_output_2_f5 (display<0>)
+     LUT4:I0->O            1   0.551   0.801  seven_segment_decoder/Mrom_obus51 (b_OBUF)
+     OBUF:I->O                 5.644          b_OBUF (b)
+    ----------------------------------------
+    Total                     11.558ns (7.826ns logic, 3.732ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 112 / 7
+-------------------------------------------------------------------------
+Delay:               11.129ns (Levels of Logic = 5)
+  Source:            x1<0> (PAD)
+  Destination:       a (PAD)
+
+  Data Path: x1<0> to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   0.996  x1_0_IBUF (x1_0_IBUF)
+     LUT3:I1->O            1   0.551   0.000  multiplexer/Mmux_output_4 (multiplexer/Mmux_output_4)
+     MUXF5:I0->O           7   0.360   1.405  multiplexer/Mmux_output_2_f5 (display<0>)
+     LUT4:I0->O            1   0.551   0.801  seven_segment_decoder/Mrom_obus51 (b_OBUF)
+     OBUF:I->O                 5.644          b_OBUF (b)
+    ----------------------------------------
+    Total                     11.129ns (7.927ns logic, 3.202ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.67 secs
+ 
+--> 
+
+Total memory usage is 231716 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

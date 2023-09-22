@@ -1,0 +1,8 @@
+vhdl work "../struct/tristate_buffer.vhd"
+vhdl work "../struct/register.vhd"
+vhdl work "../struct/multiplexer_2to4.vhd"
+vhdl work "../struct/multiplexer_1to2.vhd"
+vhdl work "../struct/adder.vhd"
+vhdl work "../struct/data_path.vhd"
+vhdl work "../struct/control_unit.vhd"
+vhdl work "../struct/even_odd_counter.vhd"

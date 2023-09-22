@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/Xilinx/projects/seven_segment/counter_2bit_isim_beh.exe" -prj "E:/Xilinx/projects/seven_segment/counter_2bit_beh.prj" "work.counter_2bit" 

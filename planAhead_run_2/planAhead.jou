@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Sep 20 22:56:49 2023
+# Process ID: 7248
+# Log file: E:/Xilinx/projects/seven_segment/planAhead_run_2/planAhead.log
+# Journal file: E:/Xilinx/projects/seven_segment/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/Xilinx/projects/seven_segment/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS25 [get_ports [list a]]
+set_property iostandard LVCMOS25 [get_ports [list an1]]
+set_property iostandard LVCMOS25 [get_ports [list an2]]
+set_property iostandard LVCMOS33 [get_ports [list an0]]
+set_property iostandard LVCMOS33 [get_ports [list b]]
+set_property iostandard LVCMOS33 [get_ports [list clk]]
+set_property iostandard LVCMOS33 [get_ports [list d]]
+set_property iostandard LVCMOS33 [get_ports [list f]]
+set_property iostandard LVCMOS33 [get_ports [list h]]
+set_property iostandard LVCMOS33 [get_ports [list an1]]
+set_property iostandard LVCMOS33 [get_ports [list a]]
+set_property iostandard LVCMOS33 [get_ports [list g]]
+set_property iostandard LVCMOS33 [get_ports [list e]]
+set_property iostandard LVCMOS33 [get_ports [list clr]]
+set_property iostandard LVCMOS33 [get_ports [list c]]
+set_property iostandard LVCMOS33 [get_ports [list an3]]
+set_property iostandard LVCMOS33 [get_ports [list an2]]
+startgroup
+set_property package_pin E14 [get_ports a]
+endgroup
+startgroup
+set_property package_pin D14 [get_ports an0]
+endgroup
+startgroup
+set_property package_pin G14 [get_ports an1]
+endgroup
+startgroup
+set_property package_pin F14 [get_ports an2]
+endgroup
+startgroup
+set_property package_pin E13 [get_ports an3]
+endgroup
+startgroup
+set_property package_pin G13 [get_ports b]
+endgroup
+startgroup
+set_property package_pin N15 [get_ports c]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports d]
+endgroup
+startgroup
+set_property package_pin R16 [get_ports e]
+endgroup
+startgroup
+set_property package_pin F13 [get_ports f]
+endgroup
+startgroup
+set_property package_pin N16 [get_ports g]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports h]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports clr]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports clk]
+endgroup
+save_constraints

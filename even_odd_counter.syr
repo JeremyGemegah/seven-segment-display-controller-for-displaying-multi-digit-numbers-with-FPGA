@@ -1,0 +1,520 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Reading design: even_odd_counter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "even_odd_counter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "even_odd_counter"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : even_odd_counter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Xilinx/projects/struct/register.vhd" in Library work.
+Architecture behavioral of Entity registern is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/tristate_buffer.vhd" in Library work.
+Architecture behavioral of Entity tristate_buffer is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/multiplexer_2to4.vhd" in Library work.
+Architecture behavioral of Entity multiplexer_2to4 is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/multiplexer_1to2.vhd" in Library work.
+Architecture behavioral of Entity multiplexer_1to2 is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/adder.vhd" in Library work.
+Architecture behavioral of Entity adder is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/control_unit.vhd" in Library work.
+Architecture behavioral of Entity control_unit is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/data_path.vhd" in Library work.
+Architecture behavioral of Entity data_path is up to date.
+Compiling vhdl file "E:/Xilinx/projects/struct/even_odd_counter.vhd" in Library work.
+Entity <even_odd_counter> compiled.
+Entity <even_odd_counter> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <even_odd_counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <control_unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <data_path> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <registern> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <tristate_buffer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <multiplexer_2to4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <multiplexer_1to2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <adder> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <even_odd_counter> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "E:/Xilinx/projects/struct/even_odd_counter.vhd" line 94: Unconnected output port 'registerz' of component 'data_path'.
+WARNING:Xst:753 - "E:/Xilinx/projects/struct/even_odd_counter.vhd" line 94: Unconnected output port 'registerw' of component 'data_path'.
+Entity <even_odd_counter> analyzed. Unit <even_odd_counter> generated.
+
+Analyzing Entity <control_unit> in library <work> (Architecture <behavioral>).
+Entity <control_unit> analyzed. Unit <control_unit> generated.
+
+Analyzing Entity <data_path> in library <work> (Architecture <behavioral>).
+Entity <data_path> analyzed. Unit <data_path> generated.
+
+Analyzing Entity <registern> in library <work> (Architecture <behavioral>).
+Entity <registern> analyzed. Unit <registern> generated.
+
+Analyzing Entity <tristate_buffer> in library <work> (Architecture <behavioral>).
+Entity <tristate_buffer> analyzed. Unit <tristate_buffer> generated.
+
+Analyzing Entity <multiplexer_2to4> in library <work> (Architecture <behavioral>).
+Entity <multiplexer_2to4> analyzed. Unit <multiplexer_2to4> generated.
+
+Analyzing Entity <multiplexer_1to2> in library <work> (Architecture <behavioral>).
+Entity <multiplexer_1to2> analyzed. Unit <multiplexer_1to2> generated.
+
+Analyzing Entity <adder> in library <work> (Architecture <behavioral>).
+Entity <adder> analyzed. Unit <adder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <control_unit>.
+    Related source file is "E:/Xilinx/projects/struct/control_unit.vhd".
+    Found finite state machine <FSM_0> for signal <ps>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | clr                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st0                                            |
+    | Power Up State     | st0                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <control_unit> synthesized.
+
+
+Synthesizing Unit <registern>.
+    Related source file is "E:/Xilinx/projects/struct/register.vhd".
+    Found 8-bit register for signal <output>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <registern> synthesized.
+
+
+Synthesizing Unit <tristate_buffer>.
+    Related source file is "E:/Xilinx/projects/struct/tristate_buffer.vhd".
+    Found 8-bit tristate buffer for signal <output>.
+    Summary:
+	inferred   8 Tristate(s).
+Unit <tristate_buffer> synthesized.
+
+
+Synthesizing Unit <multiplexer_2to4>.
+    Related source file is "E:/Xilinx/projects/struct/multiplexer_2to4.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <output>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <multiplexer_2to4> synthesized.
+
+
+Synthesizing Unit <multiplexer_1to2>.
+    Related source file is "E:/Xilinx/projects/struct/multiplexer_1to2.vhd".
+Unit <multiplexer_1to2> synthesized.
+
+
+Synthesizing Unit <adder>.
+    Related source file is "E:/Xilinx/projects/struct/adder.vhd".
+    Found 8-bit addsub for signal <answer>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder> synthesized.
+
+
+Synthesizing Unit <data_path>.
+    Related source file is "E:/Xilinx/projects/struct/data_path.vhd".
+Unit <data_path> synthesized.
+
+
+Synthesizing Unit <even_odd_counter>.
+    Related source file is "E:/Xilinx/projects/struct/even_odd_counter.vhd".
+Unit <even_odd_counter> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 4
+ 8-bit register                                        : 4
+# Multiplexers                                         : 2
+ 8-bit 4-to-1 multiplexer                              : 2
+# Tristates                                            : 4
+ 8-bit tristate buffer                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <controlunit/ps/FSM> on signal <ps[1:8]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ st0   | 00000001
+ st1   | 00000010
+ st2   | 00000100
+ st3   | 00001000
+ st4   | 00100000
+ st5   | 01000000
+ st6   | 10000000
+ st7   | 00010000
+-------------------
+WARNING:Xst:1290 - Hierarchical block <register_w> is unconnected in block <datapath>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <register_z_tristate> is unconnected in block <datapath>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <register_w_tristate> is unconnected in block <datapath>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Multiplexers                                         : 2
+ 8-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:524 - All outputs of the instance <datapath/register_w> of the block <registern> are unconnected in block <even_odd_counter>.
+   This instance will be removed from the design along with all underlying logic
+
+Optimizing unit <even_odd_counter> ...
+
+Optimizing unit <registern> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block even_odd_counter, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : even_odd_counter.ngr
+Top Level Output File Name         : even_odd_counter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 29
+
+Cell Usage :
+# BELS                             : 77
+#      GND                         : 1
+#      LUT2                        : 7
+#      LUT2_D                      : 1
+#      LUT3                        : 19
+#      LUT4                        : 27
+#      LUT4_D                      : 4
+#      MUXCY                       : 7
+#      MUXF5                       : 3
+#      XORCY                       : 8
+# FlipFlops/Latches                : 32
+#      FDC                         : 7
+#      FDCE                        : 24
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 9
+#      OBUF                        : 3
+#      OBUFT                       : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       31  out of   1920     1%  
+ Number of Slice Flip Flops:             32  out of   3840     0%  
+ Number of 4 input LUTs:                 58  out of   3840     1%  
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    173    16%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------+-----------------------------------+-------+
+Control Signal                                    | Buffer(FF name)                   | Load  |
+--------------------------------------------------+-----------------------------------+-------+
+controlunit/ps_FSM_FFd8(controlunit/ps_FSM_FFd8:Q)| NONE(datapath/register_x/output_0)| 24    |
+clr                                               | IBUF                              | 8     |
+--------------------------------------------------+-----------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.943ns (Maximum Frequency: 100.577MHz)
+   Minimum input arrival time before clock: 2.571ns
+   Maximum output required time after clock: 12.072ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.943ns (frequency: 100.577MHz)
+  Total number of paths / destination ports: 2177 / 55
+-------------------------------------------------------------------------
+Delay:               9.943ns (Levels of Logic = 11)
+  Source:            controlunit/ps_FSM_FFd3 (FF)
+  Destination:       datapath/register_z/output_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: controlunit/ps_FSM_FFd3 to datapath/register_z/output_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             30   0.720   2.181  controlunit/ps_FSM_FFd3 (controlunit/ps_FSM_FFd3)
+     LUT2_D:I0->O          8   0.551   1.109  datapath/first_operand/Mmux_output16_SW1 (N6)
+     LUT4:I3->O            1   0.551   0.827  datapath/adder_subtractor/Maddsub_answer_lut<1>_SW0 (N31)
+     LUT4:I3->O            1   0.551   0.000  datapath/adder_subtractor/Maddsub_answer_lut<1> (datapath/adder_subtractor/Maddsub_answer_lut<1>)
+     MUXCY:S->O            1   0.500   0.000  datapath/adder_subtractor/Maddsub_answer_cy<1> (datapath/adder_subtractor/Maddsub_answer_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  datapath/adder_subtractor/Maddsub_answer_cy<2> (datapath/adder_subtractor/Maddsub_answer_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  datapath/adder_subtractor/Maddsub_answer_cy<3> (datapath/adder_subtractor/Maddsub_answer_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  datapath/adder_subtractor/Maddsub_answer_cy<4> (datapath/adder_subtractor/Maddsub_answer_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  datapath/adder_subtractor/Maddsub_answer_cy<5> (datapath/adder_subtractor/Maddsub_answer_cy<5>)
+     MUXCY:CI->O           0   0.064   0.000  datapath/adder_subtractor/Maddsub_answer_cy<6> (datapath/adder_subtractor/Maddsub_answer_cy<6>)
+     XORCY:CI->O           3   0.904   0.975  datapath/adder_subtractor/Maddsub_answer_xor<7> (datapath/result<7>)
+     LUT3:I2->O            1   0.551   0.000  datapath/multiplexer_for_z/output<7>1 (datapath/z_input<7>)
+     FDCE:D                    0.203          datapath/register_z/output_7
+    ----------------------------------------
+    Total                      9.943ns (4.851ns logic, 5.092ns route)
+                                       (48.8% logic, 51.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.571ns (Levels of Logic = 2)
+  Source:            input<7> (PAD)
+  Destination:       datapath/register_z/output_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: input<7> to datapath/register_z/output_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   0.996  input_7_IBUF (input_7_IBUF)
+     LUT3:I1->O            1   0.551   0.000  datapath/multiplexer_for_z/output<7>1 (datapath/z_input<7>)
+     FDCE:D                    0.203          datapath/register_z/output_7
+    ----------------------------------------
+    Total                      2.571ns (1.575ns logic, 0.996ns route)
+                                       (61.3% logic, 38.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 220 / 19
+-------------------------------------------------------------------------
+Offset:              12.072ns (Levels of Logic = 3)
+  Source:            controlunit/ps_FSM_FFd3 (FF)
+  Destination:       registerx<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: controlunit/ps_FSM_FFd3 to registerx<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             30   0.720   2.181  controlunit/ps_FSM_FFd3 (controlunit/ps_FSM_FFd3)
+     LUT4:I0->O            2   0.551   0.945  controlunit/ps_FSM_Out51 (state<2>)
+     LUT3:I2->O           16   0.551   1.237  datapath/register_x_tristate/output_cmp_eq0000_inv1 (datapath/register_x_tristate/output_cmp_eq0000_inv)
+     OBUFT:T->O                5.887          registerx_7_OBUFT (registerx<7>)
+    ----------------------------------------
+    Total                     12.072ns (7.709ns logic, 4.363ns route)
+                                       (63.9% logic, 36.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.87 secs
+ 
+--> 
+
+Total memory usage is 233764 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
